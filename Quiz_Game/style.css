@@ -1,0 +1,82 @@
+*{
+	margin : 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: grid;
+	place-content: center;
+	overflow: hidden;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-image: linear-gradient(155deg,rgb(156, 69, 69),rgb(30, 28, 28),rgba(94, 31, 31, 0.751));
+}
+hr{
+	margin: 10px 25px;
+}
+h1{
+	text-align: center;
+	padding-top: 8px;
+}
+.app{
+	background: linear-gradient(160deg,rgba(39, 39, 143, 0.795),rgb(43, 117, 186),rgba(22, 167, 167, 0.844));
+	width: 600px;
+	/* height: 80vh; */
+	border-radius: 10px;
+}
+.quiz{
+	padding: 20px;
+}
+.quiz h2{
+	font-size: 22px;
+	color: #01e5fa;
+	font-weight: 600;
+}
+.options button{
+	background-color: white;
+	color: #222;
+	font-weight: 500;
+	width: 100%;
+	padding: 12px;
+	margin: 5px 0;
+	text-align: left;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.options button:hover:not([disabled]){
+	background-color: #222;
+	color: #fff;
+}
+.next{
+	font-weight: 500;
+	padding: 10px solid ;
+	width: 100px;
+	height: 40px;
+	font-size: 18px;
+	border-radius: 6px;
+	display: none;
+	margin : 10px auto;
+}
+.next:hover{
+	background-color: aquamarine;
+	cursor: pointer;
+	transition: ease-in-out;
+}
+
+
+/* marquee{
+	direction: ltr;
+	border: 2px solid red;
+	border-radius: 10px;
+	font-size: 32px;
+	font-weight: 900;
+	background-color: rgb(48, 134, 209);
+	margin: 7px 10px 5px 10px; 
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: blanchedalmond;
+} 
+*/
