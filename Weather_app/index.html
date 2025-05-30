@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather of city</title>
+    <link rel="icon" href="resource/clouds.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city Name" spellcheck="false" autofocus>
+            <button type="submit" autofocus><img src="resource/search.png" alt="Search icon" class="btn"></button>
+        </div>
+        <div class="error">Invalid city Name </div>
+        <div class="weather">
+            <img src="resource/rain.png" alt="Weather condition" title="Weather status" class="weather-icon">
+            <h1 class="temp">27°C</h1>
+            <h2 class="city">Dhanbad</h2>
+            <div class="details">
+                <div class="humidity-details">
+                    <img src="resource/humidity.png" alt="humidity icon" title="humidity of City">
+                    <div>
+                    <p class="humidity">45%</p>
+                    <p>Humidity</p>
+                </div>
+                </div>
+                <div class="wind-details">
+                    <img src="resource/wind.png" alt="wind icon" title="Wind speed of the City">
+                    <div>
+                    <p class="wind-speed">34 Km/hr</p>
+                    <p>Wind speed</p>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- 
+    <script>
+        document.getElementById('inputField').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Prevent the default form submit action
+                document.getElementById('submitButton').click(); // Trigger the button click
+            }
+        });
+    </script>
+
+ -->
+
+    <script src="main.js"></script>
+</body>
+</html>
