@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  user-select: none; /* user can not select the text from the web */
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  min-width: 20vh;
+  background-image: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px 20px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  border-radius: 10px;
+  margin: 100px auto;
+  background-color: white;
+  padding: 10px 20px 40px 20px;
+}
+.todo-app nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .h2-first {
+  color: #002765;
+  padding-top: 0px;
+}
+nav h2 {
+  padding-top: 0px;
+  font-size: 40px;
+  text-wrap: nowrap;
+}
+nav img {
+  padding-top: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 0px 0 -8px -10px;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  border: 3px solid #002765;
+  border-radius: 12px 13px 13px 12px;
+}
+main {
+  padding-left: 30px;
+}
+main input {
+  flex-grow: 1;
+  width: 50%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+}
+input:hover ,input:focus{
+    outline: none;
+}
+main button {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: linear-gradient(135deg, #275fd1, #b681c3);
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+    /* user select none is added at the universal selector */
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-image: url('./assests/uncheck.png');
+    background-size: cover;
+    background-position: center;
+    top:18px;
+    left: -10px;
+    /* cursor: pointer; */
+}
+ul .checked{
+    text-decoration: line-through;
+    color: #b681c3;
+}
+ul li.checked::before{
+    background-image: url('./assests/check.png');
+}
+li span{
+    position: absolute;
+    margin-top: -6px;
+    right: 0;
+    width: 40px;
+    font-size: 32px;
+    text-align: center;
+}
+ul li.checked span{
+    text-decoration: none;
+}
+li span:hover{
+    border-radius: 40%;
+    background-color: #f30909;
+    color: #2a74dd;
+}
